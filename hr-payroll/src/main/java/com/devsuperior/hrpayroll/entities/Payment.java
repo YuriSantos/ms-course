@@ -2,15 +2,14 @@ package com.devsuperior.hrpayroll.entities;
 
 import java.io.Serializable;
 
-public class Payment implements Serializable{
+public class Payment implements Serializable {
 	private static final long serialVersionUID = 1L;
-	
+
 	private String name;
 	private Double dailyIncome;
 	private Integer days;
 	
 	public Payment() {
-		
 	}
 
 	public Payment(String name, Double dailyIncome, Integer days) {
@@ -47,5 +46,4 @@ public class Payment implements Serializable{
 	public double getTotal() {
 		return days * dailyIncome;
 	}
-	
 }
